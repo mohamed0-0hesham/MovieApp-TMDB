@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="trendingItemXml"
+            type="com.example.movietrainingapplication.models.MovieItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/original_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="240sp"
+            android:contentDescription="movie_image"
+            android:scaleType="centerCrop"
+            app:dropBackUrl="@{trendingItemXml.backdrop_path}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/poster_imageView"
+            android:layout_width="120sp"
+            android:layout_height="170sp"
+            android:layout_marginTop="130sp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="movie_image"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{trendingItemXml.poster_path}"
+            app:layout_constraintEnd_toStartOf="@+id/movieTitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/original_imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="9sp"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:text="@{trendingItemXml.name==null ? trendingItemXml.title : trendingItemXml.name}"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/poster_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/original_imageView"
+            tools:text="Movie name cknakc ckanckc  acnkcka acncak dncnsc" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

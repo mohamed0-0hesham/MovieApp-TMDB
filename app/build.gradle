@@ -7,15 +7,15 @@ plugins {
 }
 
 android {
-    namespace 'com.example.movietrainingapplication'
-    compileSdk 33
+    namespace 'com.hesham0_0.movietrainingapplication'
 
     defaultConfig {
-        applicationId "com.example.movietrainingapplication"
+        applicationId "com.hesham0_0.movietrainingapplication"
         minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 33
+        compileSdk 33
+        versionCode 61
+        versionName "2.0.51"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

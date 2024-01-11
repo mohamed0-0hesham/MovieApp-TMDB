@@ -26,8 +26,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_bar"
-        app:itemTextColor="@color/Primary_Color_Dark_blue"
-        app:itemRippleColor="@color/Tertiary_Color_Light_green"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

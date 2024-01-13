@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Movie Training Application</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">SoCinema</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search">search</string>
     <string name="there_is_no_data">There Is No Data</string>

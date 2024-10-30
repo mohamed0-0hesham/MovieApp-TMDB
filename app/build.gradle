@@ -12,10 +12,10 @@ android {
     defaultConfig {
         applicationId "com.hesham0_0.movietrainingapplication"
         minSdk 21
-        targetSdkVersion 33
-        compileSdk 33
+        targetSdkVersion 34
+        compileSdk 34
         versionCode 61
-        versionName "2.0.51"
+        versionName "2.0.6"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -17,7 +17,9 @@
         app:icon="@drawable/ic_baseline_arrow_back_24"
         app:iconTint="#535353"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Back"
+        />
 
     <TextView
         android:id="@+id/PageNameText"

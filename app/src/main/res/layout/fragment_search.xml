@@ -57,7 +57,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/SearchText"
             app:layout_constraintVertical_bias="0.096"
-            app:spanCount="2"
+            app:spanCount="3"
             tools:listitem="@layout/movie_item" />
 
         <TextView

@@ -29,7 +29,9 @@
             app:iconPadding="1dp"
             app:iconTint="?attr/colorPrimary"
             app:layout_constraintBottom_toBottomOf="@+id/trendingMovies"
-            app:layout_constraintEnd_toEndOf="@+id/trendingMovies" />
+            app:layout_constraintEnd_toEndOf="@+id/trendingMovies"
+            tools:text="back"
+            />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/trendingMenu"
@@ -160,7 +162,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleTrend"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:orientation="horizontal"
@@ -201,7 +203,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleLatest"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:orientation="horizontal"
@@ -242,7 +244,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclePopular"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:orientation="horizontal"

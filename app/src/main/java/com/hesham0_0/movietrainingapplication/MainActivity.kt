@@ -21,10 +21,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment
         val navController = navHostFragment.navController
         binding.bottomNavigationView.setupWithNavController(navController)
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
-            window.setFlags(FLAG_LAYOUT_NO_LIMITS, FLAG_LAYOUT_NO_LIMITS)
-        }
+        window.setFlags(FLAG_LAYOUT_NO_LIMITS, FLAG_LAYOUT_NO_LIMITS)
 //        statusIconColor(this)
     }
 //   private fun statusIconColor(activity: Activity){

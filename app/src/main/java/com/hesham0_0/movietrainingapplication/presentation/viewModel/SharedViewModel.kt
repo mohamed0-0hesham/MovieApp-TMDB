@@ -69,8 +69,8 @@ open class SharedViewModel @Inject constructor(private val productRepository: Pr
     fun getGenreMovieList(): LiveData<String> = liveData {
         var genreFilterList: List<MovieItem> = emptyList()
         if (selectedGenreId.value!!.isNotEmpty()) {
-            for (i in 1..selectedGenreId.value!!.size * 10) {
-                val data = productRepository.getTopRatedResult(selectedPage.toString())
+            while (genreFilterList.size < 20) {
+                val data = productRepository.getTopRatedResult(selectedPage.value.toString())
                 if (selectedPage.value!! <= data.total_pages) {
                     selectedPage.value = selectedPage.value?.plus(1)
                     val response =
@@ -79,13 +79,12 @@ open class SharedViewModel @Inject constructor(private val productRepository: Pr
                         filterListByList(it.genre_ids!!, selectedGenreId.value!!)
                     }
                     genreFilterList = genreFilterList + genreList
-                } else {
-                    emit("No More Results")
-                }
-                if (genreFilterList.isEmpty()){
-                    emit("There are No Results")
                 }
             }
+            if (genreFilterList.isEmpty()) {
+                emit("There are No Results")
+            }
+
         } else {
             genreMovieList.value = emptyList()
             emit("Choose Genre")

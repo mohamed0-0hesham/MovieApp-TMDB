@@ -27,7 +27,7 @@ class TrendingMoviesAdapter (
 
     fun setData(itemList: List<MovieItem>, addList:Boolean){
         if (addList) {
-            this.itemList = this.itemList+itemList
+            this.itemList += itemList
         }
         else{
             this.itemList = itemList
@@ -39,7 +39,7 @@ class TrendingMoviesAdapter (
         RecyclerView.ViewHolder(binding.root) {
         init {
             itemView.setOnClickListener {
-                listener.onItemClick(adapterPosition,itemList[adapterPosition])
+                listener.onItemClick(bindingAdapterPosition,itemList[bindingAdapterPosition])
             }
         }
     }

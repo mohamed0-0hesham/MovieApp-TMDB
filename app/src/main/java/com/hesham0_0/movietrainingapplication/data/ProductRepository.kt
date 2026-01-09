@@ -2,12 +2,16 @@ package com.hesham0_0.movietrainingapplication.data
 
 import android.app.Application
 import android.widget.Toast
-import com.hesham0_0.movietrainingapplication.data.apiInterfaces.*
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.GenresInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.PopularInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.SearchInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.TopRatedInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.TrendingInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.UpcomingInterface
 import com.hesham0_0.movietrainingapplication.methods.MethodsClass.Companion.checkForInternet
-import com.hesham0_0.movietrainingapplication.models.Genre
-import com.hesham0_0.movietrainingapplication.models.MovieList
+import com.hesham0_0.movietrainingapplication.domain.models.Genre
+import com.hesham0_0.movietrainingapplication.domain.models.MovieList
 import kotlinx.coroutines.*
-import retrofit2.Retrofit
 import javax.inject.Inject
 
 class ProductRepository @Inject constructor(

@@ -1,13 +1,17 @@
 package com.hesham0_0.movietrainingapplication.di
 
-import com.hesham0_0.movietrainingapplication.data.apiInterfaces.*
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.GenresInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.PopularInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.SearchInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.TopRatedInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.TrendingInterface
+import com.hesham0_0.movietrainingapplication.data.remote.apiServices.UpcomingInterface
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.inject.Named
 import javax.inject.Singleton
 
 @Module

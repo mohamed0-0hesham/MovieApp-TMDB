@@ -6,7 +6,7 @@
     <data>
         <variable
             name="ItemListXml"
-            type="com.hesham0_0.movietrainingapplication.models.MovieItem" />
+            type="com.hesham0_0.movietrainingapplication.domain.models.MovieItem" />
     </data>
 
     <androidx.cardview.widget.CardView

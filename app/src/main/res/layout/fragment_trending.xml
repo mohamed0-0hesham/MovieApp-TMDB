@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".ui.TrendingFragment">
+        tools:context=".presentation.ui.fragments.TrendingFragment">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/trendingMovies"

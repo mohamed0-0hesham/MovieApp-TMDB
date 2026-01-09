@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.DetailsFragment">
+    tools:context=".presentation.ui.fragments.DetailsFragment">
 
     <data>
         <variable
             name="movieItemXml"
-            type="com.hesham0_0.movietrainingapplication.models.MovieItem" />
+            type="com.hesham0_0.movietrainingapplication.domain.models.MovieItem" />
     </data>
 
     <ScrollView
@@ -52,7 +52,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/backbutton"
         app:icon="@drawable/ic_baseline_arrow_back_24"
-        app:iconTint="@color/white"
+        app:iconTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Back"

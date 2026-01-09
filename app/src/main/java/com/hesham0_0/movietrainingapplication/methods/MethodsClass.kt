@@ -10,7 +10,7 @@ import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.hesham0_0.movietrainingapplication.R
-import com.hesham0_0.movietrainingapplication.models.Genre
+import com.hesham0_0.movietrainingapplication.domain.models.Genre
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 import kotlin.math.roundToInt

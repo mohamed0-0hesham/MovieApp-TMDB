@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/trendingFragment"
-        android:name="com.hesham0_0.movietrainingapplication.ui.TrendingFragment"
+        android:name="com.hesham0_0.movietrainingapplication.presentation.ui.fragments.TrendingFragment"
         android:label="fragment_trending"
         tools:layout="@layout/fragment_trending" >
         <action
@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.hesham0_0.movietrainingapplication.ui.DetailsFragment"
+        android:name="com.hesham0_0.movietrainingapplication.presentation.ui.fragments.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
     <fragment
         android:id="@+id/genresFragment"
-        android:name="com.hesham0_0.movietrainingapplication.ui.GenresFragment"
+        android:name="com.hesham0_0.movietrainingapplication.presentation.ui.fragments.GenresFragment"
         android:label="fragment_genres"
         tools:layout="@layout/fragment_genres" >
         <action
@@ -33,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.hesham0_0.movietrainingapplication.ui.SearchFragment"
+        android:name="com.hesham0_0.movietrainingapplication.presentation.ui.fragments.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" >
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/seeMoreFragment"
-        android:name="com.hesham0_0.movietrainingapplication.ui.SeeMoreFragment"
+        android:name="com.hesham0_0.movietrainingapplication.presentation.ui.fragments.SeeMoreFragment"
         android:label="fragment_see_more"
         tools:layout="@layout/fragment_see_more" >
         <action

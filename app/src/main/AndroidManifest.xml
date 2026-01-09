@@ -16,7 +16,7 @@
         android:theme="@style/Theme.MovieTrainingApplication"
         tools:targetApi="36">
         <activity
-            android:name=".presentation.ui.Activities.SplashActivity"
+            android:name=".presentation.ui.activities.SplashActivity"
             android:theme="@style/SplashScreenTheme"
             android:exported="true">
             <intent-filter>
@@ -29,7 +29,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".presentation.ui.Activities.MainActivity"
+            android:name=".presentation.ui.activities.MainActivity"
             >
 
 

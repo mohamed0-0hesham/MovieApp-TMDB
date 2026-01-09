@@ -69,8 +69,8 @@ open class SharedViewModel @Inject constructor(private val productRepository: Pr
     fun getGenreMovieList(): LiveData<String> = liveData {
         var genreFilterList: List<MovieItem> = emptyList()
         if (selectedGenreId.value!!.isNotEmpty()) {
-            while (genreFilterList.size < 20) {
-                val data = productRepository.getTopRatedResult(selectedPage.value.toString())
+            val data = productRepository.getTopRatedResult(selectedPage.value.toString())
+            while (genreFilterList.size < 20 && selectedPage.value!! <= data.total_pages) {
                 if (selectedPage.value!! <= data.total_pages) {
                     selectedPage.value = selectedPage.value?.plus(1)
                     val response =

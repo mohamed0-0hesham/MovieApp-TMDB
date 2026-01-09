@@ -1,4 +1,4 @@
-package com.hesham0_0.movietrainingapplication.presentation.ui.Activities
+package com.hesham0_0.movietrainingapplication.presentation.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
